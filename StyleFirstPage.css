@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 /* Stilizare header */
@@ -32,7 +33,7 @@ body {margin:0;font-family:Arial}
 }
 
 .active {
-  background-color: #04AA6D;
+  
   color: white;
 }
 
@@ -135,8 +136,19 @@ body {margin:0;font-family:Arial}
 }
 
 /* Stilizare adăugată pentru site-ul nostru */
-.container {
+#container {
   padding: 16px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#container h2{
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-family: "Caveat", cursive;
+  font-weight: lighter;
+  font-size: 90px;
 }
 
 h2 {
@@ -154,19 +166,38 @@ section {
 }
 
 #intro {
-  background-color: #f2f2f2;
+  background-color: #f0ecec;
 }
+/*
+#intro2 {
+  background-color: #f0ecec;
+}*/
 
 #descriptions {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-around;
+  
 }
 
 .country {
-  flex: 1 1 300px;
+  background-color: #fff;
   border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+
+.country a {
+  display: block;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
   padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 /* Stilizare footer */
