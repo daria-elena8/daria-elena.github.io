@@ -11,7 +11,6 @@
       <header>
           <nav class="topnav" id="myTopnav">
               <a href="#home" class="active">Home</a>
-              <a href="#contact">Contact</a>
               <div class="dropdown">
                 <button class="dropbtn">Top Trei Tari 
                   <i class="fa fa-caret-down"></i>
@@ -22,6 +21,7 @@
                   <a href="Muntenegru.html">Muntenegru</a>
                 </div>
               </div> 
+              <a href="Contact.html">Contact</a>
               <a href="#about">About</a>
               <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </nav>
@@ -107,16 +107,25 @@
             <a href="Elvetia.html">Aflați mai multe</a>
         </div>
 
-  
-        <!-- Restul codului pentru celelalte țări -->
+
       </section>
   
-      <section id="contact">
-        <h2>Contact</h2>
-        <form>
-          <!-- Formular de contact -->
-        </form>
-      </section>
+      <div id="containerC">
+        <section id="comments">
+          <h2>Comentarii</h2>
+          <div id="comment-list">
+          </div>
+          <form id="comment-form">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" pattern="[A-Za-z\s]+" required>
+            <br>
+            <label for="comment">Comentariu:</label>
+            <textarea id="comment" rows="4" pattern="[\s\S]+" required></textarea>
+            <br>
+            <button type="submit">Trimite comentariu</button>
+          </form>
+        </section>
+      </div>
     </main>
   
     <footer>
